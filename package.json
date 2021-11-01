@@ -1,0 +1,31 @@
+{
+  "name": "algo-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test",
+    "lib": "main"
+  },
+  "scripts": {
+    "test": "node --experimental-modules --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "jest:clearcache": "jest --clear-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teaching-project/algo-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teaching-project/algo-basics/issues"
+  },
+  "homepage": "https://github.com/teaching-project/algo-basics#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7"
+  }
+}
