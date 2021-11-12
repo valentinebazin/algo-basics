@@ -9,6 +9,7 @@
     "lib": "main"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "node --experimental-modules --experimental-vm-modules node_modules/jest/bin/jest.js",
     "jest:clearcache": "jest --clear-cache"
   },
