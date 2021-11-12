@@ -1,12 +1,24 @@
-import * as readline from 'node:readline/promises'
-import { stdin as input, stdout as output } from 'process'
+import read from "../../lib/reader.js";
 
+export async function guessTheNumber() {
+    // to read a user input :
+    // let input = await read()
 
+    const random = Math.floor(100 * Math.random())
 
-    const rl = readline.createInterface({ input, output });
+    while (true) {
+        let input = await read()
+        console.log(typeof(input))
+        if (typeof input !== "number")
+            console.log("Please, input a number")
+        else if (input < random)
+            console.log("bigger")
+        else if (input > random)
+            console.log("smaller")
+        else if (input == random) {
+            console.log(`correct ! input: ${input} | random: ${random}`)
+            break;
+        }
+    }
+}
 
-const answer = await rl.question('What do you think of Node.js? ');
-
-console.log(`Thank you for your valuable feedback: ${answer}`);
-
-rl.close()
