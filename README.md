@@ -135,6 +135,29 @@ Une condition ternaire a l'avantage de tenir en une ligne, mais peut nuire à la
 
 ### Boucles For & While
 
+
+Afin de répéter un ensemble d'un struction plusieurs fois, ou un nombre dynamique de fois (voire infini), nous disposons des instructions de boucle (loop) : **for** et **while**.
+
+#### For
+
+L'instruction for permet d'itérer suivant la valeur d'un index (souvent noté *i* ou *j*) :
+```
+for (i: Integer = 0; i < 10; ++i) {
+	// do something 10 times
+}
+```
+(nb :  `++i` est un opérateur d'incrémentation, équivalent à `i = i + 1`, et équivalent à ` i++`, au détail près que dans le premier cas, la valeur renvoyée est celle post incrémentation, et la valeur pré incrémentation dans le second.  Il est aussi possible de décrémenter : `--i`)
+
+Tandis que l'instruction while s'exécute tant qu'une condition est vraie :
+```
+while (i > 0) {
+	// do something
+	++i; // Bien penser à la condition de sortie, ou à utiliser un break; afin de ne pas créer de boucle infinie !!
+}
+```
+
+`while (true) { }` pour créer une boucle infinie
+
 #### Chess rook
 
 #### Afficher triangle
