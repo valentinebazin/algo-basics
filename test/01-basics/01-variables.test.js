@@ -1,7 +1,7 @@
 import { celciusToFahrenheit, helloWorld, sum } from '../../main/01-basics/01-variables.js'
 
 test('should return "Hello, world!"', () => {
-  expect(helloWorld()).toEqual('Hello, world!')
+  expect(helloWorld()).toEqual('Hello, >orld!')
 });
 
 describe('should convert Celcius degrees to Fahrenheit', () => {

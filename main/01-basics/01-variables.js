@@ -1,13 +1,14 @@
-/** First function : Hello world ! */
+/** First function : it must return "Hello, World!" */
 export function helloWorld() {
-    return 'Hello, world!'
+    
 }
+
 
 /** 
  * Write a function that returns the sum of the two numbers passed as arguments.
  */
 export function sum(a, b) {
-    return a + b
+    
 }
 
 /**
@@ -18,6 +19,14 @@ export function sum(a, b) {
  * @returns the temperature converted to Fahrenheit
  */
 export function celciusToFahrenheit(celciusTemperature) {
-    return celciusTemperature * (9/5) + 32
+    
 }
 
+/**
+ * Write a function that returns true if the provided word's length is greater than 8, false otherwise.
+ * 
+ * string.length() to get the length of a string.
+ */
+export function isGreaterThan20(word) {
+
+}
