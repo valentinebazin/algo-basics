@@ -1,3 +1,3 @@
-import { guessTheNumber } from "./main/01-basics/02-conditions.js";
+import { guessTheNumber } from "./main/02-intermediate/guess-the-number.js"
 
 guessTheNumber()

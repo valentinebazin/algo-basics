@@ -5,11 +5,7 @@
  * [dayCount], starting from the given [initialInfectedCount] on the 1st day.
  */
 export function pandemicForecast(initialInfectedCount, dayCount) {
-    let infectedCount = initialInfectedCount
-    for(let i = 0; i < dayCount; ++i) {
-        infectedCount = infectedCount * 2
-    }
-    return infectedCount
+    
 }
 
 /**

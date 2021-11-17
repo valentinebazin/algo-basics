@@ -68,7 +68,7 @@ Une variable booléenne peut être instanciée simplement : `condition: boolean 
 Par exemple `isWeatherFine = temperature > 20` ou `isWaterFrozen = temperature == 0`
 
 ### Algèbre Booléenne
-Les deux principaux opérateurs pour les booléens utilisés en programmation et en algorithmie pour la programmation, sont dits *opérateurs logiques*, et sont le ET (AND `&&`) et le OU (OR `||`).
+Les deux principaux opérateurs pour les booléens utilisés en programmation et en algorithmie pour la programmation, sont dits *opérateurs logiques*, et sont le ET ou *conjonction* (AND `&&`) et le OU ou *disjonction* (OR `||`).
 
 |	AND (`&&`)	|	true	|	false	|
 |--|--|--|
@@ -94,6 +94,10 @@ L'usage de parenthèses permet de changer l'ordre d'exécution des opérateurs (
 (true || true) && false
 // > false
 ```
+
+**Théorème de Morgan**
+ - Première loi - négation de la disjonction : `!(a || b) = !a || !b`
+ - Deuxième loi - négation de la conjonction : `!(a && b) = !a && !b`
 
 ### Array - Tableau
 
@@ -269,55 +273,3 @@ function factorial(n: Int) {
 ❌`zero: Double = 0.0`❌ | ✅`freezingTemperature: Double = 0.0`✅.
  - Une fonction doit être nommée selon ce qu'elle fait, et non selon comment elle le fait, ou pourquoi elle est appelée.
  - Limitez toujours la portée d'une variable au plus proche de son scope d'utilisation (le plus réduit possible) : si elle n'est utilisée que dans une boucle, ou une condition, alors ne la déclarez que dans ces blocs. De même, préférez passer une variable en argument d'une fonction, plutôt que de manipuler des variables dites "globales", tant que cela est possible.
-
-
-#### Rémunération streamer
-#### Chess rook
-
-#### Afficher triangle
-
-#### Chess bishop
-
-  
-
-
-#### Chess convert functions
-
-#### Functions min / max
-
-#### Fibonacci
-
-  
-
-### Exercices avancés
-
-#### Chess moves
-
-#### Calcul PGCD / PPCM
-
-#### Map/Filter/Reduce
-
-  
-
-• Définition de l’algorithmie : quoi et pourquoi ?
-
-  
-
-• Les concepts de conditions et de boucle
-
-  
-
-• Les règles de nommage des variables
-
-  
-
-• Les structures de données de type tableau
-
-  
-
-• L’utilisation et la création de fonctions
-
-
-
-
-
