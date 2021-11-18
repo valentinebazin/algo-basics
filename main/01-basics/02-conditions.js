@@ -6,6 +6,16 @@ export function basicCondition(fruit) {
 }
 
 /**
+ * Write a function that generates a random number between 1 and 10 and takes a number as an argument.
+ * It must return : "higher !" if the random number is greater, "lower..." if it is smaller, and
+ * "Yes ! The number was {number}" if it is equal
+ */
+export function guessTheNumber(n) {
+    const random = Math.floor(10 * Math.random() + 1)
+}
+
+guessTheNumber(5)
+/**
  * Write a function that computes the sum of the two given integer values. If the two values are the same, then return triple their sum
  */
 export function sumOrTriple(a, b) {

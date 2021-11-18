@@ -7,6 +7,6 @@ export async function guessTheNumber() {
     // Verify that a variable is a number with : typeof(input) === "number"
 
     // random number between 0 - 100 :
-    const random = Math.floor(100 * Math.random());
+    const random = Math.floor(100 * Math.random())
 
 }
