@@ -26,20 +26,20 @@ export function celciusToFahrenheit(celciusTemperature) {
  * 
  * string.length() to get the length of a string.
  */
-export function isGreaterThan20(word) {
-
+export function isGreaterThan8(word) {
+    
 }
 
 /**
  * Write a XOR function, which is the exclusive version of the OR
  */
 export function xor(a, b) {
-
+    
 }
 
 /**
  * Similarily, write a XNOR function, also called equivalence, which returns true only if both boolean arguments are true or false
  */
 export function xnor(a, b) {
-
+    
 }
