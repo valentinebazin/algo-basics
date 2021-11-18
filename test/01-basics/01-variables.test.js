@@ -1,4 +1,4 @@
-import { celciusToFahrenheit, helloWorld, isGreaterThan8, sum, xor, xnor } from '../../main/01-basics/01-variables.js'
+import { celciusToFahrenheit, helloWorld, isGreaterThan8, sum, xor, xnor, divide } from '../../main/01-basics/01-variables.js'
 
 test('should return "Hello, world!"', () => {
     expect(helloWorld()).toEqual('Hello, >orld!')
@@ -35,4 +35,10 @@ describe('xnor', () => {
     test("true xnor false is true", () => expect(xnor(true, false)).toEqual(false))
     test("false xnor false is false", () => expect(xnor(false, false)).toEqual(true))
     test("false xnor true is true", () => expect(xnor(false, true)).toEqual(false))
+})
+
+describe('should return the result of a division', () => {
+    test("7 divide 3 = 2 with 1 rest", () => expect(divide(7, 3)).toEqual('quotient = 2, remainder = 1'))
+    test("23 divide 5 = 4 with 3 rest", () => expect(divide(23, 5)).toEqual('quotient = 4, remainder = 3'))
+    test("12 divide 3 = 4 with 0 rest", () => expect(divide(12, 3)).toEqual('quotient = 4, remainder = 0'))
 })

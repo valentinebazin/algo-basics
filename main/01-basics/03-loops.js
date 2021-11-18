@@ -1,4 +1,11 @@
 /**
+ * Write a function that returns the index of the first occurence of an element in the provided array
+ */
+export function find(array, element) {
+    
+}
+
+/**
  * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
  */
  export function closestTo100AmongArray(numbers) {
@@ -22,13 +29,5 @@ export function pandemicForecast(initialInfectedCount, dayCount) {
  * with "buzz" and if the number is divisible by both 3 and 7, it is replaced by "fizzbuzz"
  */
 export function fizzBuzz(numbers) {
-    
+
 }
-
-/**
- * Same exercise but using the [initialHealthyCount] as the amount of non-infected
- * people. 
- */
-// export function pandemicPopulation(populationCount, initialInfectedCount, nbDays) {
-
-// }

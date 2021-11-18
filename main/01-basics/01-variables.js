@@ -43,3 +43,13 @@ export function xor(a, b) {
 export function xnor(a, b) {
     
 }
+
+/**
+ * Write a function that returns a text that describes the result of a division, with the format :
+ * Math.floor(number) to get the integer part of a decimal
+ * 
+ * "quotient = 7, remainder = 3"
+ */
+export function divide(a, b) {
+    
+}

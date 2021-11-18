@@ -1,4 +1,9 @@
-import { absoluteDiff, closestTo100, is30OrSumIs30, isMultipleOf3OrDivisibleBy7, sumOrTriple } from "../../main/01-basics/02-conditions"
+import { absoluteDiff, basicCondition, closestTo100, is30OrSumIs30, isMultipleOf3OrDivisibleBy7, sumOrTriple } from "../../main/01-basics/02-conditions"
+
+describe('should find the raspberry', () => {
+    test('basicCondition should find a raspberry', () => expect(basicCondition('raspberry')).toEqual('raspberry !'))
+    test('basicCondition should exclude other fruits', () => expect(basicCondition('apple')).toEqual('doh !'))
+})
 
 describe('should sumOrTriple compute either the sum or triple sum', () => {
     test('1 sumOrTriple 6 = 7', () => expect(sumOrTriple(1, 6)).toEqual(7))

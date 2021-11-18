@@ -1,4 +1,11 @@
 /**
+ * Write a function that returns "raspberry !" if the provided fruit is a raspberry, and "doh !" otherwise
+ */
+export function basicCondition(fruit) {
+    
+}
+
+/**
  * Write a function that computes the sum of the two given integer values. If the two values are the same, then return triple their sum
  */
 export function sumOrTriple(a, b) {
@@ -23,8 +30,6 @@ export function is30OrSumIs30(a, b) {
 
 /**
  * Write a function to check whether a given positive number is a multiple of 3 or a divisible by 7
- * 
- * tip: the modulo operator % returns the remainder of a division between two numbers
  */
 export function isMultipleOf3OrDivisibleBy7(n) {
     

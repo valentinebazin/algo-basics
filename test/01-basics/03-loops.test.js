@@ -1,4 +1,9 @@
-import { closestTo100AmongArray, fizzBuzz, pandemicForecast } from "../../main/01-basics/03-loops"
+import { closestTo100AmongArray, find, fizzBuzz, pandemicForecast } from "../../main/01-basics/03-loops"
+
+describe('should find the index of an element in an array', () => {
+    test('3 is at index 4 in [1, 2, 9, 5, 3, 18, 4, 3]', () => expect(find([1, 2, 9, 5, 3, 18, 4, 3], 3)).toEqual(4))
+    test('"apple" is at index 2 in ["banana", "pineapple", "apple", "strawberry"]', () => expect(find(["banana", "pineapple", "apple", "strawberry"], 'apple')).toEqual(2))
+})
 
 describe('should find the number which is closest to 100 among an array of numbers', () => {
     test('among [1, 4, 45, 104, 82, -5, 23] 104 is closest to 100', () => expect(closestTo100AmongArray([1, 4, 45, 104, 82, -5, 23])).toEqual(104))
