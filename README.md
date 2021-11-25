@@ -1,5 +1,7 @@
 # Algorithmie
 
+Un algorithme est un ensemble séquentiel d'instructions finies et non ambiguë, permettant d'arriver à un résultat.
+
 ## Variables
 
 Une variable est l'entité de base d'un algorithme (et d'un programme). Elle permet de stocker une information nécessaire au raisonnement et est définie par 3 propriétés :
@@ -72,14 +74,14 @@ Les deux principaux opérateurs pour les booléens utilisés en programmation et
 
 |	AND (`&&`)	|	true	|	false	|
 |--|--|--|
-|	**true**	|			|			|
-|	**false**	|			|			|
+|	**true**	|	true	|	false	|
+|	**false**	|	false	|	false	|
 
 
 |	OR (`\|\|`)	|	true	|	false	|
 |--|--|--|
-|	**true**	|			|			|
-|	**false**	|			|			|
+|	**true**	|	true	|	true	|
+|	**false**	|	true	|	false	|
 
 
 A ces opérateurs, on ajoute la négation (`!`) : `!true == false` et `!false == true`.
