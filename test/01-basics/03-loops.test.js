@@ -1,9 +1,16 @@
-import { closestTo100AmongArray, find, fizzBuzz, pandemicForecast } from "../../main/01-basics/03-loops"
+import { closestTo100AmongArray, find, fizzBuzz, pandemicForecast, reverseString } from "../../main/01-basics/03-loops"
 
 /** FIND ELEMENT INDEX */
 describe('should find the index of an element in an array', () => {
     test('3 is at index 4 in [1, 2, 9, 5, 3, 18, 4, 3]', () => expect(find([1, 2, 9, 5, 3, 18, 4, 3], 3)).toEqual(4))
     test('"apple" is at index 2 in ["banana", "pineapple", "apple", "strawberry"]', () => expect(find(["banana", "pineapple", "apple", "strawberry"], 'apple')).toEqual(2))
+})
+
+/** REVERSE STRING */
+describe('should reverse the characters of a word', () => {
+    test('reverse of "word" is "dorw"', () => expect(reverseString('word')).toEqual('drow'))
+    test('reverse of "hello" is "olleh"', () => expect(reverseString('hello')).toEqual('olleh'))
+    test('reverse of "this is a full sentence" is "ecnetnes lluf a si siht"', () => expect(reverseString('this is a full sentence')).toEqual('ecnetnes lluf a si siht'))
 })
 
 /** CLOSEST TO 100 */

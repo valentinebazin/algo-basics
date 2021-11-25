@@ -6,6 +6,16 @@ export function find(array, element) {
 }
 
 /**
+ * Write a function that return the input word with reversed letters
+ * 
+ * string.split("") to obtain an array of each letter of a word
+ * ["w", "o", "r", "d"].join("") to join the elements of an array
+ */
+export function reverseString(word) {
+    
+}
+
+/**
  * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
  */
  export function closestTo100AmongArray(numbers) {
