@@ -2,7 +2,7 @@ import { celciusToFahrenheit, helloWorld, isGreaterThan8, sum, xor, xnor, divide
 
 /** HELLO WORLD */
 test('should return "Hello, world!"', () => {
-    expect(helloWorld()).toEqual('Hello, >orld!')
+    expect(helloWorld()).toEqual('Hello, World!')
 })
 
 /** SUM */
