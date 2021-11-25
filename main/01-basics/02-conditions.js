@@ -14,7 +14,6 @@ export function guessTheNumber(n) {
     const random = Math.floor(10 * Math.random() + 1)
 }
 
-guessTheNumber(5)
 /**
  * Write a function that computes the sum of the two given integer values. If the two values are the same, then return triple their sum
  */
@@ -49,5 +48,19 @@ export function isMultipleOf3OrDivisibleBy7(n) {
  * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
  */
 export function closestTo100(x, y) {
+    
+}
+
+/**
+ * Write a function that returns the categorize of the provided word
+ * 
+ * Those words and categorizes can be : 
+ * raspberry, orange, apple, banana => FRUIT
+ * paris, london, new-york, berlin => CITY
+ * cat, dog, bird, horse, fish => ANIMAL
+ * 
+ * if a word is unknown, "UNKNOWN" should be returned
+ */
+export function categorizeWord(word) {
     
 }

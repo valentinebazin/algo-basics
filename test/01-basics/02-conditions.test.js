@@ -1,4 +1,4 @@
-import { absoluteDiff, basicCondition, closestTo100, is30OrSumIs30, isMultipleOf3OrDivisibleBy7, sumOrTriple } from "../../main/01-basics/02-conditions"
+import { absoluteDiff, basicCondition, categorizeWord, closestTo100, is30OrSumIs30, isMultipleOf3OrDivisibleBy7, sumOrTriple } from "../../main/01-basics/02-conditions"
 
 /** BASIC CONDITION */
 describe('should find the raspberry', () => {
@@ -43,4 +43,13 @@ describe('should find the number which is closest to 100', () => {
     test('82 is closer to 100 than 24', () => expect(closestTo100(82, 24)).toEqual(82))
     test('102 is closer to 100 than 120', () => expect(closestTo100(120, 102)).toEqual(102))
     test('56 and 56 are equally close to 100', () => expect(closestTo100(56, 56)).toEqual(0))
+})
+
+/** CATEGORIZE WORD */
+describe('should categorize a word appropriately', () => {
+    test('raspberry is a fruit', () => expect(categorizeWord("raspberry")).toEqual("FRUIT"))
+    test('paris is a city', () => expect(categorizeWord("paris")).toEqual("CITY"))
+    test('cat is an animal', () => expect(categorizeWord("cat")).toEqual("ANIMAL"))
+    test('unknown words are correctly handled', () => expect(categorizeWord("firjfgioej")).toEqual("UNKNOWN"))
+    
 })
