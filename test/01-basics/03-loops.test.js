@@ -1,4 +1,4 @@
-import { closestTo100AmongArray, find, fizzBuzz, pandemicForecast, reverseString } from "../../main/01-basics/03-loops"
+import { closestTo100AmongArray, factorial, fibonacci, find, fizzBuzz, pandemicForecast, reverseString } from "../../main/01-basics/03-loops"
 
 /** FIND ELEMENT INDEX */
 describe('should find the index of an element in an array', () => {
@@ -22,15 +22,9 @@ describe('should find the number which is closest to 100 among an array of numbe
 
 /** PANDEMIC */
 describe('pandemic test', () => {
-    test('1 after 3 days becomes 8', () => {
-        expect(pandemicForecast(1, 3)).toEqual(8)
-    })
-    test('10 after 5 days becomes 320', () => {
-        expect(pandemicForecast(10, 5)).toEqual(320)
-    })
-    test('125 after 3 days becomes 1000', () => {
-        expect(pandemicForecast(125, 3)).toEqual(1000)
-    })
+    test('1 after 3 days becomes 8', () => expect(pandemicForecast(1, 3)).toEqual(8))
+    test('10 after 5 days becomes 320', () => expect(pandemicForecast(10, 5)).toEqual(320))
+    test('125 after 3 days becomes 1000', () => expect(pandemicForecast(125, 3)).toEqual(1000))
 })
 
 /** FIZZ BUZZ */
@@ -41,4 +35,26 @@ describe('fizz buzz', () => {
     test('fizzBuzz([15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]) is "fizzbuzz13fizz1110fizz8buzzfizz54fizz21"', () => {
         expect(fizzBuzz([15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1])).toEqual("fizzbuzz13fizz1110fizz8buzzfizz54fizz21")
     })
+})
+
+/** FIBONACCI */
+describe('correctly computes the fibonacci sequence', () => {
+    test('fibonacci(0) = 0', () => expect(fibonacci(0)).toEqual(0))
+    test('fibonacci(1) = 1', () => expect(fibonacci(1)).toEqual(1))
+    test('fibonacci(2) = 1', () => expect(fibonacci(2)).toEqual(1))
+    test('fibonacci(3) = 0', () => expect(fibonacci(3)).toEqual(2))
+    test('fibonacci(4) = 0', () => expect(fibonacci(4)).toEqual(3))
+    test('fibonacci(5) = 0', () => expect(fibonacci(5)).toEqual(5))
+    test('fibonacci(8) = 0', () => expect(fibonacci(8)).toEqual(21))
+})
+
+/** FACTORIAL */
+describe('correctly computes the factorial number', () => {
+    test('factorial(0) = 0', () => expect(factorial(0)).toEqual(1))
+    test('factorial(1) = 1', () => expect(factorial(1)).toEqual(1))
+    test('factorial(2) = 1', () => expect(factorial(2)).toEqual(2))
+    test('factorial(3) = 0', () => expect(factorial(3)).toEqual(6))
+    test('factorial(4) = 0', () => expect(factorial(4)).toEqual(24))
+    test('factorial(5) = 0', () => expect(factorial(5)).toEqual(120))
+    test('factorial(8) = 0', () => expect(factorial(8)).toEqual(40320))
 })
