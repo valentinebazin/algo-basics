@@ -43,7 +43,7 @@ export function fizzBuzz(numbers) {
 }
 
 /**
- * Similarly, write a function that computes the result of the factorial of the provided number.
+ * Write a function that computes the result of the factorial of the provided number.
  * 
  * Factorial of n is the product of all positive integers smaller or equal to n :
  * 4! = 4 x 3 x 2 x 1
@@ -53,7 +53,7 @@ export function factorial(n) {
 }
 
 /** 
- * Write a function that computes the result of the fibonacci sequence for the provided n integer value.
+ * Similarly, write a function that computes the result of the fibonacci sequence for the provided n integer value.
  * 
  * note: Fibonacci suite is defined as a sequence such as each number is the sum of the two preceding ones, starting from 0 and 1.
  * 
