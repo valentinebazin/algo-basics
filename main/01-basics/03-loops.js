@@ -43,6 +43,13 @@ export function fizzBuzz(numbers) {
 }
 
 /**
+ * Write a function that takes an array of numbers as an argument and returns an same size array with its items sorted
+ */
+ export function sort(numbers) {
+
+}
+
+/**
  * Write a function that computes the result of the factorial of the provided number.
  * 
  * Factorial of n is the product of all positive integers smaller or equal to n :

@@ -1,4 +1,4 @@
-import {factorial, fibonacci} from "../../main/01-basics/04-functions"
+import {bubbleSort, factorial, fibonacci} from "../../main/01-basics/04-functions"
 
 /** FIBONACCI */
 describe('correctly computes the fibonacci sequence', () => {
@@ -20,4 +20,11 @@ describe('correctly computes the factorial number', () => {
     test('factorial(4) = 0', () => expect(factorial(4)).toEqual(24))
     test('factorial(5) = 0', () => expect(factorial(5)).toEqual(120))
     test('factorial(8) = 0', () => expect(factorial(8)).toEqual(40320))
+})
+
+/** BUBBLE SORT */
+describe('should sort the items in the array', () => {
+    test('[1, 2, 3, 4, 5] => [1, 2, 3, 4, 5]', () => expect(bubbleSort([1, 2, 3, 4, 5], 0)).toEqual([1, 2, 3, 4, 5]))
+    test('[10, 5, 2, 8, 4] => [2, 4, 5, 8, 10]', () => expect(bubbleSort([10, 5, 2, 8, 4], 0)).toEqual([2, 4, 5, 8, 10]))
+    test('[3, 2, 1, 1, 2, 4, 3] => [1, 1, 2, 2, 3, 3, 4]', () => expect(bubbleSort([3, 2, 1, 1, 2, 4, 3], 0)).toEqual([1, 1, 2, 2, 3, 3, 4]))
 })

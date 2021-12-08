@@ -26,3 +26,11 @@
 export function fibonacci(n) {
 
 }
+
+/**
+ * Using recursivity, write a function that sorts the numbers in the array passed as an argument.
+ * index represent the index of the current iteration. Starts at 0.
+ */
+export function bubbleSort(numbers, index) {
+
+}

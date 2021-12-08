@@ -1,4 +1,4 @@
-import { closestTo100AmongArray, factorial, fibonacci, find, fizzBuzz, pandemicForecast, reverseString } from "../../main/01-basics/03-loops"
+import { closestTo100AmongArray, factorial, fibonacci, find, fizzBuzz, pandemicForecast, reverseString, sort } from "../../main/01-basics/03-loops"
 
 /** FIND ELEMENT INDEX */
 describe('should find the index of an element in an array', () => {
@@ -35,6 +35,13 @@ describe('fizz buzz', () => {
     test('fizzBuzz([15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]) is "fizzbuzz13fizz1110fizz8buzzfizz54fizz21"', () => {
         expect(fizzBuzz([15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1])).toEqual("fizzbuzz13fizz1110fizz8buzzfizz54fizz21")
     })
+})
+
+/** SORT */
+describe('should sort the items in the array', () => {
+    test('[1, 2, 3, 4, 5] => [1, 2, 3, 4, 5]', () => expect(sort([1, 2, 3, 4, 5])).toEqual([1, 2, 3, 4, 5]))
+    test('[10, 5, 2, 8, 4] => [2, 4, 5, 8, 10]', () => expect(sort([10, 5, 2, 8, 4])).toEqual([2, 4, 5, 8, 10]))
+    test('[3, 2, 1, 1, 2, 4, 3] => [1, 1, 2, 2, 3, 3, 4]', () => expect(sort([3, 2, 1, 1, 2, 4, 3])).toEqual([1, 1, 2, 2, 3, 3, 4]))
 })
 
 /** FIBONACCI */
