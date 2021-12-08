@@ -15,3 +15,33 @@ Instructions à utiliser :
     - SINON {INSTRUCTION}
 
 Il n'est possible de demander l'état d'un segment qu'à partir d'un de ses côtés.
+
+---
+
+CORRECTION
+```
+LIRE chemin_rouge_ouvert
+
+SI chemin_rouge_ouvert TRUE
+    ALORS
+        Aller A -> C
+        Allez C -> F
+        Allez F -> H
+
+    SINON
+        Aller A -> B
+
+ECRIRE "Le chemin jaune est il ouvert"
+LIRE chemin_jaune_ouvert
+
+SI chemin_jaune_ouvert TRUE
+    ALORS
+        Allez B->C 
+        Allez C->F
+        Allez F->H
+    SINON
+        Allez B-> D
+        Allez D->E
+        Allez E->F
+        Allez F->H
+```
