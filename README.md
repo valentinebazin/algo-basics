@@ -181,7 +181,7 @@ switch(word):
 
 ### Ternaire
 
-Une condition ternaire a l'avantage de tenir en une ligne, mais peut nuire à la lisibilité du code pour un cas complexe. Elle devrait être réservées aux conditions simples :
+Une condition ternaire a l'avantage de tenir en une ligne, mais peut nuire à la lisibilité du code pour un cas complexe. Elles devraient être réservées aux conditions simples :
 `numberSign: String = myNumber >= 0 ? "positive" : "negative"`
 
 
