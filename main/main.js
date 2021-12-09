@@ -9,8 +9,3 @@ function increment(a) {
     console.log(nom_variable + 1)
 }
 
-increment()
-increment(15)
-increment(15)
-increment(15)
-increment(15)
