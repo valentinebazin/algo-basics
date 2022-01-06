@@ -20,7 +20,7 @@ favoriteGame
 // > "Chess"
 ```
 
-Appeler une variable avant de l'avoir déclarée provoque une erreur, tout comme l'appeler en dehors de son *scope* :
+Appeler une variable avant de l'avoir déclarée provoque une erreur, tout comme l'appeler en dehors de son *scope*. On parle de la *portée d'une variable* :
 ```
 ##### {
 	// ...
