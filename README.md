@@ -240,6 +240,23 @@ que les puristes nommeront **arguments** lors de son appel :
 convertToMetric(17.6)
 // > "Voici mes arguments : 17.6
 ```
+Enfin, une fonction peut renvoyer une valeur au cours de son exécution, via un `return`, stoppant alors l'exécution de la fonction et reprenant à l'instruction qui l'a appelé :
+```
+// 1) déclaration d'une fonction, le code qu'elle contient n'est exécuté qu'à son appel
+function getNumberSign(number: Double) {
+	if(number < 0) {
+		return "negative"
+	// puisque number < 0, l'exécution du code s'arrête s'arrête ici pour cette fonction et reprend au niveau de son appel. La valeur renvoyée est "négative".
+	} else {
+		return "positive"
+	}
+}
+
+let myNumber = -8.0
+// 2) l'instruction ci-dessous fait appel à la fonction déclarée précédemment, provoquant l'exécution de son code
+let numberSign = getNumberSign(myNumber)
+// 4) L'exécution du code reprend ici et numberSign === "negative"
+```
 
 
 #### Fonctions récursives
