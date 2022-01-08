@@ -106,6 +106,7 @@ L'usage de parenthèses permet de changer l'ordre d'exécution des opérateurs (
 Les autres types de variables sont dits "complexes" et correspondent notamment aux types d'objet (vu en POO). Nous nous limiterons ici aux structures de type tableau.
 
 Une variable de type *array* permet de stocker plusieurs valeurs, généralement d'un même type : `notes: Double[] = [ 12.5, 17, 14.5, 19, 16 ]`
+On accède à un élément du tableau par indice (les indices d'un tableau commencent par 0) : `let thirdNote = notes[2]    // 14.5`
 
 Il est possible de définir des arrays à plusieurs dimensions :
 ```
