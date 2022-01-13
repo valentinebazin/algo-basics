@@ -16,14 +16,14 @@ export function reverseString(word) {
 }
 
 /**
- * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
+ * Write a function to check which number is nearest to 100 among the array of numbers.
  */
  export function closestTo100AmongArray(numbers) {
      
 }
 
 /**
- * A pandemic is propagating ! Every day, number of infected persons doubles.
+ * A pandemic is propagating ! Every day, the number of infected persons doubles.
  * Write a function that forecasts the number of infected people at after a given
  * [dayCount], starting from the given [initialInfectedCount] on the 1st day.
  */
@@ -35,7 +35,7 @@ export function pandemicForecast(initialInfectedCount, dayCount) {
  * FizzBuzz ....
  * 
  * Write a function that takes an array or numbers as an argument and return a concatenation string
- * of its values and replace every number divisible by 3 with "fizz", every number divisible by 5
+ * of its values and replace every number divisible by 3 with "fizz", every number divisible by 7
  * with "buzz" and if the number is divisible by both 3 and 7, it is replaced by "fizzbuzz"
  */
 export function fizzBuzz(numbers) {
@@ -43,7 +43,7 @@ export function fizzBuzz(numbers) {
 }
 
 /**
- * Write a function that takes an array of numbers as an argument and returns an same size array with its items sorted
+ * Write a function that takes an array of numbers as an argument and returns an array of the same size with its items sorted.
  */
  export function sort(numbers) {
 

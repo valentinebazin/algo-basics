@@ -1,0 +1,6 @@
+tasks:
+  - init: npm install
+vscode:
+  extensions:
+    - formulahendry.code-runner
+    - firsttris.vscode-jest-runner
